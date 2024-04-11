@@ -71,11 +71,10 @@
     sectionTitles.forEach(title => {
       title.addEventListener('click', () => {
         const contentWrapper = title.nextElementSibling;
-        if (contentWrapper.style.display === 'none') {
-          contentWrapper.style.display = 'block';
-        } else {
-          contentWrapper.style.display = 'none';
-        }
+        contentWrappers.forEach(wrapper => {
+          wrapper.style.display = 'none';
+        });
+        contentWrapper.style.display = 'block';
       });
     });
   </script>
