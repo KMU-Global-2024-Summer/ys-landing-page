@@ -1,9 +1,9 @@
-/* Modern Color Palette */
+/* Pop Color Palette */
 :root {
-  --color-primary: #3498db;
-  --color-secondary: #9b59b6;
-  --color-tertiary: #2ecc71;
-  --color-background: #f4f4f4;
+  --color-primary: #E74C3C;
+  --color-secondary: #2980B9;
+  --color-tertiary: #F1C40F;
+  --color-background: #F4F4F4;
   --color-text: #333;
 }
 
