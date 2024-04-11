@@ -22,35 +22,62 @@
   <main>
     <section id="overview">
       <h2>Overview</h2>
-      <p>creatAIve is an AI-powered platform that aims to revolutionize the creative ecosystem by empowering creators with innovative tools and collaborative opportunities.</p>
-      <p>Our platform is designed to address key challenges faced by creators, such as lack of creative inspiration, high entry barriers, and limited feedback and collaboration opportunities.</p>
+      <div class="content-wrapper">
+        <p>creatAIve is an AI-powered platform that aims to revolutionize the creative ecosystem by empowering creators with innovative tools and collaborative opportunities.</p>
+        <p>Our platform is designed to address key challenges faced by creators, such as lack of creative inspiration, high entry barriers, and limited feedback and collaboration opportunities.</p>
+      </div>
     </section>
 
     <section id="features">
       <h2>Key Features</h2>
-      <ul>
-        <li><strong>Integrated Creative Toolset:</strong> Seamlessly create content across various mediums, including images, text, videos, and 3D.</li>
-        <li><strong>AI-Powered Ideation and Creation:</strong> Generate unique ideas and content with the help of advanced AI models, including multimodal fusion and contextual understanding.</li>
-        <li><strong>Personalized Assistance:</strong> Leverage a customized AI assistant to provide tailored feedback, recommendations, and support throughout the creative process.</li>
-        <li><strong>Collaborative Workspace:</strong> Connect with like-minded creators, form teams, and collaborate in real-time on projects.</li>
-        <li><strong>Marketplace and Monetization:</strong> Showcase and monetize your creations through the integrated marketplace, including options for limited-edition and NFT-based offerings.</li>
-        <li><strong>Educational Resources:</strong> Access a wealth of tutorials, workshops, and expert-led seminars to enhance your creative skills and knowledge.</li>
-      </ul>
+      <div class="content-wrapper">
+        <ul>
+          <li><strong>Integrated Creative Toolset:</strong> Seamlessly create content across various mediums, including images, text, videos, and 3D.</li>
+          <li><strong>AI-Powered Ideation and Creation:</strong> Generate unique ideas and content with the help of advanced AI models, including multimodal fusion and contextual understanding.</li>
+          <li><strong>Personalized Assistance:</strong> Leverage a customized AI assistant to provide tailored feedback, recommendations, and support throughout the creative process.</li>
+          <li><strong>Collaborative Workspace:</strong> Connect with like-minded creators, form teams, and collaborate in real-time on projects.</li>
+          <li><strong>Marketplace and Monetization:</strong> Showcase and monetize your creations through the integrated marketplace, including options for limited-edition and NFT-based offerings.</li>
+          <li><strong>Educational Resources:</strong> Access a wealth of tutorials, workshops, and expert-led seminars to enhance your creative skills and knowledge.</li>
+        </ul>
+      </div>
     </section>
 
     <section id="market">
       <h2>Market Opportunity</h2>
-      <p>The global creative industry market is valued at over $2 trillion, and the AI-powered creative solutions market is expected to grow rapidly, reaching over $250 billion by 2030. creatAIve is well-positioned to capitalize on this expanding market by providing a comprehensive and innovative platform for creators.</p>
+      <div class="content-wrapper">
+        <p>The global creative industry market is valued at over $2 trillion, and the AI-powered creative solutions market is expected to grow rapidly, reaching over $250 billion by 2030. creatAIve is well-positioned to capitalize on this expanding market by providing a comprehensive and innovative platform for creators.</p>
+      </div>
     </section>
 
     <section id="get-started">
       <h2>Get Started</h2>
-      <p>To learn more about creatAIve and explore our platform, please visit our <a href="https://www.creatAIve.com">website</a> or reach out to us at <a href="mailto:info@creatAIve.com">info@creatAIve.com</a>. We're excited to empower the next generation of creators and foster a vibrant creative ecosystem.</p>
+      <div class="content-wrapper">
+        <p>To learn more about creatAIve and explore our platform, please visit our <a href="https://www.creatAIve.com">website</a> or reach out to us at <a href="mailto:info@creatAIve.com">info@creatAIve.com</a>. We're excited to empower the next generation of creators and foster a vibrant creative ecosystem.</p>
+      </div>
     </section>
   </main>
 
   <footer>
     <p>&copy; 2023 creatAIve. All rights reserved.</p>
   </footer>
+
+  <script>
+    const contentWrappers = document.querySelectorAll('.content-wrapper');
+    contentWrappers.forEach(wrapper => {
+      wrapper.style.display = 'none';
+    });
+
+    const sectionTitles = document.querySelectorAll('h2');
+    sectionTitles.forEach(title => {
+      title.addEventListener('click', () => {
+        const contentWrapper = title.nextElementSibling;
+        if (contentWrapper.style.display === 'none') {
+          contentWrapper.style.display = 'block';
+        } else {
+          contentWrapper.style.display = 'none';
+        }
+      });
+    });
+  </script>
 </body>
 </html>
